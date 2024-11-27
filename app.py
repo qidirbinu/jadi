@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_sc
 
 # Fungsi untuk memuat model dan TfidfVectorizer
 def load_model(model_name):
-    model_filename = f'/content/drive/My Drive/model/{model_name}.pkl'
+    model_filename = f'{model_name}.pkl'
     if os.path.exists(model_filename):
         with open(model_filename, 'rb') as file:
             model = pickle.load(file)
@@ -18,13 +18,13 @@ def load_model(model_name):
 
 # Fungsi untuk memuat TfidfVectorizer
 def load_tfidf_vectorizer():
-    tfidf_filename = '/content/drive/My Drive/model/tfidfvectorizer.pkl'
+    tfidf_filename = 'tfidfvector.pkl'
     if os.path.exists(tfidf_filename):
         with open(tfidf_filename, 'rb') as file:
             tfidf_vectorizer = pickle.load(file)
         return tfidf_vectorizer
     else:
-        st.error("TfidfVectorizer tidak ditemukan.")
+        st.error("TfidfVector tidak ditemukan.")
         return None
 
 # Antarmuka pengguna Streamlit
