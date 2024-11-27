@@ -65,9 +65,9 @@ if st.button("Prediksi"):
             st.write("Tweet ini **tidak mengandung bullying**.")
         
         # Menampilkan metrik performa (optional)
-        st.write("Model Performance (on test set):")
-        st.write(f"Accuracy: {model.score(x_test, y_test):.2f}")
-        st.write(f"F1 Score: {f1_score(y_test, model.predict(x_test), average='weighted'):.2f}")
-        st.write(f"Precision: {precision_score(y_test, model.predict(x_test), average='weighted'):.2f}")
-        st.write(f"Recall: {recall_score(y_test, model.predict(x_test), average='weighted'):.2f}")
+#        st.write("Model Performance (on test set):")
+#        st.write(f"Accuracy: {model.score(x_test, y_test):.2f}")
+#        st.write(f"F1 Score: {f1_score(y_test, model.predict(x_test), average='weighted'):.2f}")
+#        st.write(f"Precision: {precision_score(y_test, model.predict(x_test), average='weighted'):.2f}")
+#        st.write(f"Recall: {recall_score(y_test, model.predict(x_test), average='weighted'):.2f}")
 
